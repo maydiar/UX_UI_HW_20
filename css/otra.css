@@ -53,11 +53,12 @@ header {
     box-shadow: 10px 1px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     margin: 0;
 }
 
 .inline-block {
+    box-sizing: content-box;
     display: inline-block;
     vertical-align: middle;
     background-size: cover;
@@ -182,7 +183,7 @@ a:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 25px;
+    margin-top: 25px;
 }
 
 /* Project Details */
@@ -210,6 +211,20 @@ h2 {
     padding-right: 10px;
 }  
 
+.centerHeader {
+    font-family: 'arkhipregular', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;  
+    color: #4E313F;
+    letter-spacing: -1px;
+    margin-top: -25px;
+    margin-left: -3px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: center;
+}  
+
 .card {
     margin-left: 320px;
     border: none;
@@ -232,9 +247,61 @@ h2 {
     margin-top: -15px;
 }
 
-/* Research Images */
+.cardContainer {
+    margin-top: 20px;
+    padding-right: 0px;
+  }
 
-.affinity {
+/* Ballot Bites */
+
+.bbCard {
+    background-color: rgba(156, 199, 177, 0.1);
+    height: 600px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card-img-top {
+    width: 35%;
+    margin-top: -85px;
+}
+
+.bb-card-title {
+    font-family: 'axiformabold', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    color: #9CC7B1;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+.bbBtn {
+    background-color: #9cc7b1;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'axiformabook', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    padding: 10px;
+    width: 165px;
+    transition-duration: 0.7s;
+    grid-area: 'description';
+}
+
+.bbBtn:hover {
+    background-color: #85AD99;
+    cursor: pointer; 
+    transition-duration: 0.7s;
+}
+
+/* Images */
+
+.img-fluid {
     width: 80%;
     justify-content: center;
     display: block;
@@ -244,17 +311,9 @@ h2 {
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
 }
 
-.userPersona {
-    width: 80%;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0px;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
-}
+/* Carousel */
 
-.featureMatrix {
+.d-block {
     width: 80%;
     justify-content: center;
     display: block;
@@ -265,16 +324,23 @@ h2 {
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
 }
 
-.valueProp {
-    width: 80%;
-    justify-content: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0px;
-    margin-top: 35px;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
 }
+
+.carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #6B6B66;
+}
+
+.carousel-indicators .active {
+    background-color: #F36A1D;
+}
+
+/* End Carousel */
 
 .caption{
     font-family: 'axiformalight_italic', sans-serif;
@@ -287,11 +353,35 @@ h2 {
     margin-bottom: 50px;
 }
 
+.caption2{
+    font-family: 'axiformalight_italic', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1px;
+    color: #6b6b66;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-left: 175px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+
+.workLink {
+    color: #F36A1D;
+    text-decoration: underline;
+    transition-duration: 0.s;
+}
+
+.workLink:hover {
+    color: #262626;
+    cursor: pointer; 
+    transition-duration: 0.7s;
+}
 
 /* Footer */
 
 footer {
-    box-sizing: content-box;
+    box-sizing:content-box;
     background-color: #4E313F; 
     height: 350px;
     background-size: cover;
@@ -301,6 +391,9 @@ footer {
 }
 
 .footerLogo {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing:content-box;
     padding-left: 55px;
     padding-top: 95px;
     padding-right: 0;
@@ -312,6 +405,7 @@ footer {
 }
 
 .connect {
+    box-sizing: content-box;
     display: inline-block;
     font-family: 'axiformamedium';
     text-align: center;
@@ -324,17 +418,20 @@ footer {
   }
 
   .contact img {
+    box-sizing: content-box;
     height: 25px;
-    padding-top: 135px;
+    padding-top: 125px;
     padding-bottom: 25px;
     padding-right: 25px;
 }
 
   .copyright  {
+    box-sizing:content-box;
     color: #DDDDDD;
     font-family: 'axiformabook';
     font-size: 11px;
     padding-left: 1530px;
+    margin-top: 10px;
     width: 310px;
     text-align: right;
 }
@@ -363,1195 +460,3 @@ footer {
     opacity: 1;
 }
 
-
-
-
-/* Media Queries */
-
-/* 1440 */
-
-@media only screen and (max-width: 1440px) {
-
-    /* Header */
-    
-        .inline-block {
-            display: inline-block;
-            vertical-align: middle;
-            background-size: cover;
-            margin: 0;
-            padding-left: 0px;
-        }
-    
-        .logo {
-            padding: 30px 50px;
-            width: 70%;
-            margin: 0;
-        }
-    
-        /* About */
-    
-        .about {
-            background-color: rgba(102,98,1, 0.05);
-            padding-bottom: 75px;
-        }  
-    
-        .profilePic {
-            height: 510px;
-            margin-left: 0px;
-        }
-    
-            .about p {
-                margin-left: 590px;
-              }
-        }
-    
-    
-        /* Skills */
-        .design {
-            width: 33%;
-            margin-left: 335px;
-        }
-    
-        /* Footer */
-    
-        .connect {
-            padding-left: 600px;
-        }
-    
-        .copyright  {
-            padding-left: 1080px;
-            width: 310px;
-        }
-    
-    
-    /* 1024*/
-    
-    @media only screen and (max-width: 1024px) {
-    
-    /* Header */
-    
-        .inline-block {
-            padding-left: 375px;
-        }
-    
-        .inline-block a {
-            padding-bottom: 10px;
-        }
-    
-        .logo {
-            padding: 30px 60px;
-            padding-bottom: 10px;
-        }
-        
-        .logo img {
-            max-width: 30%; 
-            margin-left: 375px;
-        }
-    
-    /* About */
-    
-        .profilePic {
-            height: 510px;
-            float: none;
-            margin-left: 250px;
-          }
-        
-          .about h1 {
-    
-            padding-top: 35px;
-            padding-left: 175px;
-          }
-        
-        .about p {
-            margin-left: 175px;
-          }
-        
-          .email {
-            margin-right: 35px;
-            margin-left: 175px;
-          }
-    
-    /*Skills */
-       
-        .mySkills h1 {
-            margin-top: -50px;
-            text-align: center;
-        }
-    
-        .design {
-           width: 33%;
-           margin-left: 130px;
-           }
-       
-        .ux {
-           width: 33%;
-           margin-left: 25px;
-       }
-       
-       .personal {
-           width: 33%;
-           margin-left: 0px;
-       }
-    
-    /* Work */ 
-    
-        .workHead {
-            margin-top: -50px;
-            margin-left: 45px;
-        } 
-    
-        .workGrid {
-            margin: 5px;
-            display: grid;
-            grid-template-rows: 200px 200px;
-            grid-template-columns: 50% 50%;
-            grid-template-areas:
-            "preview description"
-            ;
-        }
-    
-        .workGrid1 {
-            grid-template-areas:
-            "description preview"
-            ;
-        }
-    
-        .bbPreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -83px;
-        }
-    
-        .bbPreview img {
-            width: 57%;
-        }
-    
-        .bbText {
-            margin-top: 70px;
-        }
-    
-        .bbText h2 {
-            font-size: 18px;
-            padding-left: 30px;
-            padding-bottom: 10px;
-        }
-    
-        .bbText h4 {
-            font-size: 12.5px;
-            padding-left: 30px;
-        }
-    
-        .bbText p {
-            font-size: 11.75px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-        }
-    
-        .bbBtn {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-    
-        .otraPreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -83px;
-        }
-        
-        .otraPreview img {
-            text-align: center;
-            grid-area: 'preview';
-            width: 57%;
-        }
-    
-        .otraText h2 {
-            font-size: 18px;
-            margin-left: -163px;
-            margin-top: -50px;
-            padding-bottom: 10px;
-            grid-area: 'description';
-        }
-        
-        .otraText h4 {
-            font-size: 12.5px;
-            margin-left: -163px;
-            grid-area: 'description';
-        }
-        
-        .otraText p {
-            font-size: 11.75px;
-            margin-left: -163px;
-            padding-bottom: 20px;
-            grid-area: 'description';
-        }
-        
-        .otraBtn {
-            margin-left: -163px;
-            margin-bottom: 25px;
-            grid-area: 'description';
-        }
-    
-        .bbePreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -50px;
-        }
-    
-        .bbePreview img {
-            width: 110%;
-        }
-    
-        .bbeText {
-            margin-top: 40px;
-        }
-    
-        .bbeText h2 {
-            font-size: 18px;
-            margin-left: -50px;
-            padding-bottom: 10px;
-        }
-    
-        .bbeText h4 {
-            font-size: 12px;
-            margin-left: -50px;
-        }
-    
-        .bbeText p {
-            font-size: 11px;
-            padding-bottom: 20px;
-            margin-left: -50px;
-        }
-    
-        .bbeBtn {
-            margin-left: -50px;
-            margin-bottom: 25px;
-        }
-    
-    /* Footer */
-        
-        .footerLogo {
-            padding-left: 20px;
-            padding-top: 50px;
-            float: left;
-        }
-        
-        .footerLogo img {
-            height: 150px;
-            padding-left: 40px;
-        }
-        
-        .connect {
-            padding-top: 80px;
-            padding-left: 130px;
-            padding-right: 150px;
-            margin-right: -120px;
-        }
-        
-          .contact img {
-            padding-top: 120px;
-        }
-        
-          .copyright  {
-            padding-left: 340px;
-            padding-top: 75px;
-        }
-    }
-    
-    
-    
-    /* 768 */
-    
-    @media only screen and (max-width: 768px) {
-        
-        
-        .inline-block {
-            padding-left: 243px;
-        }
-        
-        .inline-block a {
-            font-size: 13px;
-            padding-bottom: 10px;
-        }
-        
-        .logo {
-            padding: 30px 60px;
-            padding-bottom: 10px;
-        }
-        
-        .logo img {
-            margin-left: 240px;
-        }
-        
-        .heroBg {
-            background-size: 75%;
-            background-position-x: 105px;
-        } 
-    
-        .about {
-            padding-bottom: 25px;
-        }
-        
-        .profilePic {
-            height: 510px;
-            float: none;
-            margin-top: -50px;
-            margin-left: 123px;
-          }
-    
-    /* About */      
-        
-        .about h1 {
-            padding-left: 40px;
-          }
-          
-        .about p {
-            padding-right: 15px;
-            margin-left: 40px;
-          }
-        
-        .email {
-            margin-right: 35px;
-            margin-left: 40px;
-        }
-    
-        .spacer {
-              display: inline-block;
-              height: 75px;
-          }
-    
-    /* Skills */
-        
-         .mySkills h3 {
-             font-size: 13px;
-         }
-        
-         .mySkills p {
-             font-size: 12px;
-         }
-        
-         .flexContainer {
-             display: flex; 
-         } 
-    
-         .design {
-            width: 33%;
-            margin-left: 75px;
-            }
-        
-         .ux {
-            width: 33%;
-            margin-left: 10px;
-        }
-        
-        .personal {
-            width: 33%;
-            margin-left: 0px;
-        }
-    
-         .apps img {
-            text-align: center;
-            margin-top: -25px;
-            height: 65px;
-        }
-       
-    /* Work */
-        
-        .workHead {
-            margin-top: -50px;
-            margin-left: 0px;
-          }
-        
-        .workGrid {
-            margin: 5px;
-            display: grid;
-            grid-template-rows: 200px;
-            grid-template-columns: 100%;
-            grid-template-areas:
-            "preview"
-            "description"
-            ;
-        }
-        
-        .workGrid1 {
-            grid-template-areas:
-            "description"
-            "preview"
-            ;
-        }
-        
-        .bbPreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -83px;
-        }
-        
-        .bbPreview img {
-            width: 35%;
-        }
-        
-        .bbText {
-            margin-top: 150px;
-            grid-area: 'description';
-        }
-        
-        .bbText h2 {
-            font-size: 20px;
-            padding-left: 100px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-        
-        .bbText h4 {
-            font-size: 14.5px;
-            padding-left: 100px;
-            grid-area: 'description';
-        }
-        
-        .bbText p {
-            font-size: 13px;
-            padding-bottom: 20px;
-            padding-left: 100px;
-            grid-area: 'description';
-        }
-        
-        .bbBtn {
-            margin-left: 100px;
-            margin-bottom: 25px;
-            grid-area: 'description';
-        }
-        
-        .otra {
-            margin-top: 100px;
-            padding-bottom: 195px;
-            background-color: rgba(246, 106, 29, 0.1)
-        }
-        
-        .otraPreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -283px;
-        }
-        
-        .otraPreview img {
-            text-align: center;
-            grid-area: 'preview';
-            width: 35%;
-        }
-        
-        .otraText {
-            margin-top: 420px;
-            margin-left: 170px;
-            grid-area: 'description';
-        }
-        
-        .otraText h2 {
-            font-size: 20px;
-            padding-left: 100px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-        
-        .otraText h4 {
-            font-size: 14.5px;
-            padding-left: 100px;
-            grid-area: 'description';
-        }
-        
-        .otraText p {
-            font-size: 13px;
-            padding-bottom: 20px;
-            padding-left: 100px;
-            grid-area: 'description';
-        }
-        
-        .otraBtn {
-            margin-left: -65px;
-            margin-bottom: 20px;
-            grid-area: 'description';
-        }
-        
-        .bbePreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -83px;
-        }
-        
-        .bbePreview img {
-            width: 75%;
-        }
-        
-        .bbeText {
-            margin-top: 70px;
-            grid-area: 'description';
-        }
-        
-        .bbeText h2 {
-            font-size: 20px;
-            margin-left: -10px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-        
-        .bbeText h4 {
-            font-size: 14.5px;
-            margin-left: -40px;
-            padding-left: 30px;
-            grid-area: 'description';
-        }
-        
-        .bbeText p {
-            font-size: 13px;
-            margin-left: -40px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            grid-area: 'description';
-        }
-        
-        .bbeBtn {
-            margin-left: -10px;
-            margin-bottom: 25px;
-            grid-area: 'description';
-        }
-        
-    /* Footer */
-        
-        footer {
-            background-color: #4E313F;
-            height: 350px;
-            background-size: cover;
-            width: 100%;
-            position: static;
-        }
-        
-        .footerLogo {
-            padding-left: 190px;
-            padding-top: 35px;
-            padding-right: 0;
-            float: none;
-        }
-        
-        .footerLogo img {
-            height: 100px;
-        }
-        
-        .connect {
-            padding-top: 10px;
-            margin-left: 165px;
-            padding-left: 50px;
-        }
-    
-          .contact img {
-            padding-top: 35px;
-        }
-        
-        .copyright  {
-            padding-left: 200px;
-            padding-top: 35px;
-        }
-    }
-    
-    
-    
-    /* 600 */
-    
-    @media only screen and (max-width: 600px) {
-        
-        .inline-block {
-            padding-left: 155px;
-        }
-        
-        .inline-block a {
-            font-size: 13px;
-            padding-bottom: 10px;
-        }
-        
-        .logo {
-            padding: 30px 60px;
-            padding-bottom: 10px;
-        }
-        
-        .logo img {
-            margin-left: 170px;
-        }
-        
-        .heroBg {
-            background-size: 75%;
-            background-position-x: 80px;
-        } 
-    
-    /* About */    
-    
-        .about {
-            padding-bottom: 25px;
-        }
-        
-        .profilePic {
-            height: 450px;
-            float: none;
-            margin-top: -50px;
-            margin-left: 65px;
-          }
-        
-        .about h1 {
-            padding-left: 40px;
-          }
-          
-        .about p {
-            font-size: 11px;
-            padding-right: 15px;
-            margin-left: 40px;
-          }
-        
-        .email {
-            margin-right: 35px;
-            margin-left: 40px;
-        }
-    
-        .spacer {
-              display: inline-block;
-              height: 75px;
-          }
-    
-        /* Skills */
-        
-         .mySkills h3 {
-             font-size: 13px;
-    
-         }
-        
-         .mySkills p {
-             font-size: 12px;
-         }
-        
-         .flexContainer {
-             display: flex; 
-             margin-bottom: -50px;
-         } 
-    
-         .design {
-            width: 33%;
-            margin-left: 45px;
-            }
-        
-         .ux {
-            width: 33%;
-            margin-left: 20px;
-        }
-        
-        .personal {
-            width: 33%;
-            margin-left: 0px;
-        }
-    
-        .apps {
-            padding-bottom: 50px;
-            margin-top: 100px;
-            } 
-    
-         .apps img {
-            text-align: center;
-            margin-top: -25px;
-            height: 55px;
-        }
-       
-    /* Work */
-        
-        .workHead {
-            margin-top: -50px;
-            margin-left: 0px;
-          }
-        
-        .workGrid {
-            margin: 5px;
-            display: grid;
-            grid-template-rows: 200px;
-            grid-template-columns: 100%;
-            grid-template-areas:
-            "preview"
-            "description"
-            ;
-        }
-        
-        .workGrid1 {
-            grid-template-areas:
-            "description"
-            "preview"
-            ;
-        }
-        
-        .bbPreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -70px;
-        }
-        
-        .bbPreview img {
-            width: 35%;
-        }
-        
-        .bbText {
-            margin-top: 60px;
-            grid-area: 'description';
-        }
-        
-        .bbText h2 {
-            font-size: 20px;
-            padding-left: 75px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-        
-        .bbText h4 {
-            font-size: 14.5px;
-            padding-left: 75px;
-            grid-area: 'description';
-        }
-        
-        .bbText p {
-            font-size: 13px;
-            padding-bottom: 20px;
-            padding-left: 75px;
-            grid-area: 'description';
-        }
-        
-        .bbBtn {
-            margin-left: 75px;
-            margin-bottom: 25px;
-            grid-area: 'description';
-        }
-        
-        .otra {
-            margin-top: 100px;
-            padding-bottom: 195px;
-            background-color: rgba(246, 106, 29, 0.1)
-        }
-        
-        .otraPreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -270px;
-        }
-        
-        .otraPreview img {
-            text-align: center;
-            grid-area: 'preview';
-            width: 35%;
-        }
-        
-        .otraText {
-            margin-top: 330px;
-            margin-left: 150px;
-            grid-area: 'description';
-        }
-        
-        .otraText h2 {
-            font-size: 20px;
-            padding-left: 100px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-        
-        .otraText h4 {
-            font-size: 14.5px;
-            padding-left: 100px;
-            grid-area: 'description';
-        }
-        
-        .otraText p {
-            font-size: 13px;
-            padding-bottom: 20px;
-            padding-left: 100px;
-            grid-area: 'description';
-        }
-        
-        .otraBtn {
-            margin-left: -65px;
-            margin-bottom: 20px;
-            grid-area: 'description';
-        }
-        
-        .bbePreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -50px;
-        }
-        
-        .bbePreview img {
-            width: 75%;
-        }
-        
-        .bbeText {
-            margin-top: 25px;
-            grid-area: 'description';
-        }
-        
-        .bbeText h2 {
-            font-size: 20px;
-            margin-left: -40px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-        
-        .bbeText h4 {
-            font-size: 14.5px;
-            margin-left: -69px;
-            padding-left: 30px;
-            grid-area: 'description';
-        }
-        
-        .bbeText p {
-            font-size: 13px;
-            margin-left: -69px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            grid-area: 'description';
-        }
-        
-        .bbeBtn {
-            margin-left: -39px;
-            margin-bottom: 25px;
-            grid-area: 'description';
-        }
-        
-    /* Footer */
-        
-        footer {
-            background-color: #4E313F;
-            height: 350px;
-            background-size: cover;
-            width: 100%;
-            position: static;
-        }
-        
-        .footerLogo {
-            padding-left: 107px;
-            padding-top: 35px;
-            padding-right: 0;
-            float: none;
-        }
-        
-        .footerLogo img {
-            height: 100px;
-        }
-        
-        .connect {
-            padding-top: 10px;
-            margin-left: 85px;
-            padding-left: 50px;
-        }
-    
-          .contact img {
-            padding-top: 35px;
-        }
-        
-        .copyright  {
-            padding-left: 120px;
-            padding-top: 35px;
-        }
-    }
-    
-    
-    /* 414 */
-    
-    @media only screen and (max-width: 414px) {
-        
-        .inline-block {
-            padding-left: 115px;
-        }
-        
-        .inline-block a {
-            font-size: 13px;
-            padding-bottom: 10px;
-        }
-    
-        .inline-block ul {
-            margin-left: -25px;
-        }
-        
-        .logo {
-            padding: 30px 60px;
-            padding-bottom: 10px;
-        }
-        
-        .logo img {
-            margin-left: 100px;
-        }
-        
-        .heroBg {
-            background-size: 87%;
-            background-position-x: 29px;
-            background-position-y: 250px;
-        }     
-    
-    /* About */    
-    
-        .about {
-            padding-bottom: 25px;
-            margin-top: -220px;
-        }
-        
-        .profilePic {
-            height: 350px;
-            float: none;
-            margin-top: -50px;
-            margin-left: 23px;
-    
-          }
-        
-        .about h1 {
-            padding-left: 25px;
-            font-size: 30px;
-            padding-top: 15px;
-          }
-          
-        .about p {
-            font-size: 11px;
-            padding-right: 15px;
-            margin-left: 25px;
-          }
-        
-        .email {
-            margin-right: 35px;
-            margin-left: 25px;
-        }
-    
-        .spacer {
-              display: inline-block;
-              height: 75px;
-          }
-    
-        /* Skills */
-        
-         .mySkills h3 {
-            font-size: 11px;
-            margin-top: -10px;
-         }
-        
-         .mySkills p {
-             font-size: 9.75px;
-         }
-        
-         .flexContainer {
-             display: flex; 
-             margin-bottom: -50px;
-         } 
-    
-         .design {
-            width: 33%;
-            margin-left: 10px;
-            }
-        
-         .ux {
-            width: 33%;
-            margin-left: 10px;
-        }
-        
-        .personal {
-            width: 33%;
-            margin-left: 0px;
-        }
-    
-         .apps img {
-            text-align: center;
-            margin-top: -25px;
-            height: 35px;
-            padding-bottom: 0px;
-        }
-       
-    /* Work */
-        
-        .workHead {
-            margin-top: -50px;
-            margin-left: 0px;
-        }
-    
-        .workGrid {
-            margin: 5px;
-            display: grid;
-            grid-template-rows: 200px;
-            grid-template-columns: 100%;
-            grid-template-areas:
-            "preview"
-            "description"
-            ;
-        }
-    
-        .workGrid1 {
-            grid-template-areas:
-            "description"
-            "preview"
-            ;
-        }
-    
-        .bbPreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -70px;
-        }
-    
-        .bbPreview img {
-            width: 50%;
-        }
-    
-        .bbText {
-            margin-top: 85px;
-            grid-area: 'description';
-        }
-    
-        .bbText h2 {
-            font-size: 18px;
-            padding-left: 20px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-    
-        .bbText h4 {
-            font-size: 14px;
-            padding-left: 20px;
-            grid-area: 'description';
-        }
-    
-        .bbText p {
-            font-size: 11px;
-            padding-bottom: 20px;
-            padding-left: 20px;
-            line-height: 17px;
-            grid-area: 'description';
-        }
-    
-        .bbBtn {
-            margin-left: 20px;
-            margin-bottom: 25px;
-            grid-area: 'description';
-        }
-    
-        .otra {
-            margin-top: 100px;
-            padding-bottom: 170px;
-            background-color: rgba(246, 106, 29, 0.1)
-        }
-    
-        .otraPreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -270px;
-        }
-    
-        .otraPreview img {
-            text-align: center;
-            grid-area: 'preview';
-            width: 50%;
-        }
-    
-        .otraText {
-            margin-top: 330px;
-            grid-area: 'description';
-        }
-    
-        .otraText h2 {
-            font-size: 18px;
-            padding-left: 33px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-    
-        .otraText h4 {
-            font-size: 14px;
-            padding-left: 35px;
-            grid-area: 'description';
-        }
-    
-        .otraText p {
-            font-size: 6.5px;
-            padding-bottom: 20px;
-            padding-left: 35px;
-            line-height: 9.5px;
-            grid-area: 'description';
-        }
-    
-        .otraBtn {
-            margin-left: -130px;
-            margin-bottom: 20px;
-            grid-area: 'description';
-        }
-    
-        .bbePreview  {
-            text-align: center;
-            grid-area: 'preview';
-            margin-top: -50px;
-        }
-    
-        .bbePreview img {
-            width: 90%;
-        }
-    
-        .bbeText {
-            margin-top: -15px;
-            grid-area: 'description';
-        }
-    
-        .bbeText h2 {
-            font-size: 18px;
-            margin-left: -100px;
-            padding-bottom: 5px;
-            grid-area: 'description';
-        }
-    
-        .bbeText h4 {
-            font-size: 14px;
-            margin-left: -130px;
-            padding-left: 30px;
-            grid-area: 'description';
-        }
-    
-        .bbeText p {
-            font-size: 11px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            margin-left: -130px;
-            line-height: 17px;
-            grid-area: 'description';
-        }
-    
-        .bbeBtn {
-            margin-left: -100px;
-            margin-bottom: 25px;
-            grid-area: 'description';
-        }
-        
-    /* Footer */
-        
-        footer {
-            background-color: #4E313F;
-            height: 350px;
-            background-size: cover;
-            width: 100%;
-            position: static;
-        }
-        
-        .footerLogo {
-            padding-left: 20px;
-            padding-top: 35px;
-        
-        }
-        
-        .footerLogo img {
-            height: 100px;
-        }
-        
-        .connect {
-            padding-top: 15px;
-            margin-left: 0px;
-            padding-left: 45px;
-        }
-    
-          .contact img {
-            padding-top: 45px;
-        }
-        
-        .copyright  {
-            padding-left: 28px;
-            padding-top: 60px;
-        }
-    }
-    
