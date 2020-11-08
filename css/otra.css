@@ -120,17 +120,6 @@ a:focus {
     font-weight: lighter;
 }
 
-.topLink {
-    padding: 2.5px;
-    margin: 0;
-}
-
-.stroke {
-    margin-top: 2.2px;
-    font-family: 'arkhipregular';
-    font-weight: lighter;
-}
-
 /* Hero */
 
 .hero {
@@ -436,6 +425,8 @@ h2 {
 /* Footer */
 
 footer {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
     box-sizing:content-box;
     background-color: #4E313F; 
     height: 350px;
@@ -515,3 +506,712 @@ footer {
     opacity: 1;
 }
 
+/* Media Queries */
+
+/* 1440 */
+
+@media only screen and (max-width: 1440px) {
+
+ /* Header */
+    
+    .inline-block {
+        padding-left: 0px;
+    }
+    
+    .logo {
+        padding: 30px 50px;
+    }
+
+/* Hero */    
+    
+    .hero {
+        background-position-y: 70px;
+        height: 770px;
+    }
+
+/* Page Title */
+
+    .pageTitle h1 {
+        font-size: 75px;  
+    }
+
+/* Project Details */
+
+    .projectOverview {
+        margin-top: 35px;
+        border: none;
+    }
+
+
+    h2 {
+        padding-top: 0px;
+    }   
+
+    .card {
+        margin-left: 200px;
+        border: none;
+    }
+
+    .card-text {
+        font-size: 15px;
+        margin-top: -5px;
+    }
+
+
+/* Ballot Bites */
+
+    .bbCard {
+        height: 475px;
+    }
+
+    .bbcard-img-top {
+        width: 35%;
+    }
+
+    .bb-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+
+/* Bert's Big Adventure */
+
+    .bbeCard {
+        height: 475px;
+    }
+
+    .bbe-card-title {
+        font-size: 23px;
+        margin-top: 50px;
+    }
+
+/* Images */
+
+    .img-fluid {
+        width: 73%;
+    }
+
+/* Carousel */
+
+    .d-block {
+        width: 73%;
+    }
+
+    .caption{
+        margin-left: 175px;
+    }
+
+    .caption2{
+        margin-left: 175px;
+    }
+    
+/* Footer */
+    
+    .connect {
+        padding-left: 600px;
+    }
+    
+     .copyright  {
+        padding-left: 1080px;
+        width: 310px;
+    }
+
+
+
+/* 1024 */
+
+@media only screen and (max-width: 1024px) {
+
+/* Header */
+       
+    .inline-block {
+        padding-left: 375px;
+    }
+
+    .inline-block a {
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        padding: 30px 60px;
+        padding-bottom: 10px;
+    }
+    
+    .logo img {
+        max-width: 30%; 
+        margin-left: 375px;
+    }
+   
+   /* Hero */    
+       
+    .hero {
+       background-position-y: 215px;
+       height: 768px;
+    }
+   
+   /* Page Title */
+   
+    .pageTitle h1 {
+        font-size: 75px;  
+    }
+   
+   /* Project Details */
+   
+    .projectOverview {
+        margin-top: 15px;
+       border: none;
+   }
+
+   .centerHeader {
+        font-size: 40px;  
+    }  
+   
+   
+    h2 {
+        padding-top: 0px;
+    }   
+   
+    .card {
+        margin-left: 175px;
+       border: none;
+   }
+   
+    .card-text {
+       font-size: 15px;
+       margin-top: -5px;
+   }
+   
+   
+/* Ballot Bites */
+   
+    .bbCard {
+       height: 350px;
+   }
+   
+   .bbcard-img-top {
+       width: 35%;
+   }
+   
+    .bb-card-title {
+        font-size: 23px;
+       margin-top: -15px;
+   }
+   
+   /* Bert's Big Adventure */
+   
+    .bbeCard {
+        height: 350px;
+    }
+   
+    .bbe-card-title {
+        font-size: 23px;
+       margin-top: 30px;
+   }
+   
+/* Images */
+   
+    .img-fluid {
+        width: 85%;
+    }
+   
+/* Carousel */
+   
+    .d-block {
+        width: 85%;
+    }
+   
+    .caption{
+        margin-left: 55px;
+        margin-bottom: -100px;
+    }
+
+       
+/* Footer */
+    
+.footerLogo {
+    padding-left: 20px;
+    padding-top: 50px;
+    float: left;
+}
+
+.footerLogo img {
+    height: 150px;
+    padding-left: 40px;
+}
+
+.connect {
+    padding-top: 80px;
+    padding-left: 130px;
+    padding-right: 150px;
+    margin-right: -120px;
+}
+
+  .contact img {
+    padding-top: 95px;
+}
+
+  .copyright  {
+    padding-left: 340px;
+    padding-top: 75px;
+}
+
+
+/* 768 */
+
+@media only screen and (max-width: 768px) {
+
+/* Header */
+           
+    .inline-block {
+        padding-left: 243px;
+    }
+    
+    .inline-block a {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    
+    .logo {
+        padding: 30px 60px;
+        padding-bottom: 10px;
+    }
+    
+    .logo img {
+        margin-left: 240px;
+    }
+       
+/* Hero */    
+           
+    .hero {
+        background-position-y: 190px;
+        height: 525px;
+    }
+       
+/* Page Title */
+       
+    .pageTitle h1 {
+        font-size: 60px;  
+    }
+       
+/* Project Details */
+       
+    .projectOverview {
+        margin-top: 15px;
+        border: none;
+    }
+    
+    .centerHeader {
+        font-size: 40px;  
+    }  
+
+    h2 {
+        padding-top: 0px;
+    }   
+       
+    .card {
+        margin-left: 30px;
+       border: none;
+    }
+       
+    .card-text {
+       font-size: 15px;
+       margin-top: -5px;
+    }
+       
+       
+/* Ballot Bites */
+       
+    .bbCard {
+       height: 475px;
+       margin-right: -15px;
+    }
+       
+    .bbcard-img-top {
+       width: 35%;
+    }
+       
+    .bb-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+       
+/* Bert's Big Adventure */
+       
+    .bbeCard {
+        height: 475px;
+        margin-left: -15px;
+    }
+       
+    .bbe-card-title {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+       
+/* Images */
+       
+    .img-fluid {
+        width: 80%;
+    }
+       
+/* Carousel */
+       
+    .d-block {
+        width: 80%;
+    }
+       
+    .caption{
+        margin-left: 55px;
+        margin-bottom: -100px;
+    }
+    
+           
+/* Footer */
+        
+    .footerLogo {
+        padding-left: 20px;
+        padding-top: 50px;
+        float: left;
+    }
+    
+    .footerLogo img {
+        height: 150px;
+        padding-left: 40px;
+    }
+    
+    .connect {
+        padding-top: 80px;
+        padding-left: 130px;
+        padding-right: 150px;
+        margin-right: -120px;
+    }
+    
+      .contact img {
+        padding-top: 95px;
+    }
+    
+      .copyright  {
+        padding-left: 340px;
+        padding-top: 75px;
+    }
+
+
+/* 600 */
+
+@media only screen and (max-width: 600px) {
+
+/* Header */    
+
+    .inline-block {
+        padding-left: 155px;
+    }
+    
+    .inline-block a {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    
+    .logo {
+        padding: 30px 60px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .logo img {
+        margin-left: 170px;
+    }
+
+/* Page Title */
+       
+    .pageTitle h1 {
+        font-size: 60px;  
+    }
+    .pageTitle p {
+        font-size: 11.75px;
+    }
+
+/* Project Details */
+       
+.projectOverview {
+    margin-top: 15px;
+    border: none;
+}
+
+.centerHeader {
+    font-size: 40px;  
+    margin-bottom: -25px;
+}  
+
+h2 {
+    padding-top: 0px;
+}   
+   
+.card {
+    margin-left: 0px;
+    border: none;
+}
+   
+.card-text {
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.card-title {
+    font-size: 15px;
+}
+   
+   
+/* Ballot Bites */
+   
+    .bbCard {
+    height: 400px;
+    margin-right: -15px;
+    }
+    
+    .bbcard-img-top {
+    width: 30%;
+    margin-top: -50px;
+    }
+    
+    .bb-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+   
+/* Bert's Big Adventure */
+   
+    .bbeCard {
+        height: 400px;
+        margin-left: -15px;
+    }
+    
+    .bbe-card-title {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+/* Images */
+   
+    .img-fluid {
+        width: 90%;
+    }
+    
+/* Carousel */
+   
+    .d-block {
+        width: 90%;
+    }
+   
+    .caption{
+        margin-left: 10px;
+        margin-bottom: -100px;
+        margin-top: -10px;
+        font-size: 9px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+        filter: invert(0%);
+    }
+
+ /* Footer */
+    
+    footer {
+        background-color: #4E313F;
+        height: 350px;
+        background-size: cover;
+        width: 100%;
+        position: static;
+    }
+
+    .footerLogo {
+        padding-left: 107px;
+        padding-top: 35px;
+        padding-right: 0;
+        float: none;
+    }
+
+    .footerLogo img {
+        height: 100px;
+    }
+
+    .connect {
+        padding-top: 10px;
+        margin-left: 85px;
+        padding-left: 50px;
+    }
+
+    .contact img {
+        padding-top: 25px;
+    }
+
+    .copyright  {
+        padding-left: 120px;
+        padding-top: 35px;
+    }
+
+
+
+/* 414 */
+
+@media only screen and (max-width: 414px) {
+
+/* Header */    
+    
+    .inline-block {
+        padding-left: 115px;
+    }
+
+    .inline-block a {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+
+    .inline-block ul {
+        margin-left: -25px;
+    }
+
+    .logo {
+        padding: 30px 60px;
+        padding-bottom: 10px;
+    }
+
+    .logo img {
+        margin-left: 100px;
+    }
+
+/* Hero */    
+           
+    .hero {
+        background-position-y: 160px;
+        height: 395px;
+    }
+    
+/* Page Title */
+           
+    .pageTitle h1 {
+        font-size: 60px;  
+    }
+    .pageTitle p {
+        font-size: 11.75px;
+    }
+    
+/* Project Details */
+           
+    .projectOverview {
+        margin-top: 15px;
+        border: none;
+    }
+    
+    .centerHeader {
+        font-size: 25px;  
+        margin-bottom: -25px;
+    }  
+    
+    h2 {
+        padding-top: 0px;
+        font-size: 28px;
+    }   
+       
+    .card {
+        margin-left: -10px;
+        border: none;
+    }
+       
+    .card-text {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    
+    .card-title {
+        font-size: 15px;
+    }
+       
+/* Ballot Bites */
+       
+    .bbCard {
+       height: 400px;
+       margin-right: -15px;
+    }
+       
+    .bbcard-img-top {
+       width: 30%;
+       margin-top: -50px;
+    }
+       
+    .bb-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+       
+/* Bert's Big Adventure */
+       
+    .bbeCard {
+        height: 400px;
+        margin-left: -15px;
+    }
+       
+    .bbe-card-title {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+    
+/* Images */
+       
+    .img-fluid {
+        width: 90%;
+    }
+       
+/* Carousel */
+       
+    .d-block {
+        width: 90%;
+    }
+       
+    .caption{
+        margin-left: 5px;
+        margin-bottom: -100px;
+        margin-top: -10px;
+        font-size: 9px;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+        filter: invert(0%);
+    }
+    
+/* Footer */
+    
+    footer {
+        background-color: #4E313F;
+        height: 350px;
+        background-size: cover;
+        width: 100%;
+        position: static;
+    }
+
+    .footerLogo {
+        padding-left: 20px;
+        padding-top: 35px;
+
+    }
+
+    .footerLogo img {
+        height: 100px;
+    }
+
+    .connect {
+        padding-top: 15px;
+        margin-left: 0px;
+        padding-left: 45px;
+    }
+
+    .contact img {
+        padding-top: 28px;
+    }
+
+    .copyright  {
+        padding-left: 28px;
+        padding-top: 60px;
+    }
+
+}
