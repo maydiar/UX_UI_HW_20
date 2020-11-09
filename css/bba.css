@@ -1,0 +1,1364 @@
+body {
+    margin: 0px;
+    padding: 0px; 
+    height: auto;  
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'arkhipregular';
+    src: url('arkhip_font-webfont.woff2') format('woff2'),
+         url('arkhip_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'axiformabold';
+    src: url('axiforma-bold-webfont.woff2') format('woff2'),
+         url('axiforma-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'axiformabook';
+    src: url('axiforma-book-webfont.woff2') format('woff2'),
+         url('axiforma-book-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'axiformalight_italic';
+    src: url('axiforma-lightitalic-webfont.woff2') format('woff2'),
+         url('axiforma-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'axiformamedium';
+    src: url('axiforma-medium-webfont.woff2') format('woff2'),
+         url('axiforma-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+
+header {
+    background-color: rgba(255, 255, 255, 0.98);
+    background-size: cover;
+    box-shadow: 10px 1px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+}
+
+.inline-block {
+    box-sizing: content-box;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: cover;
+    margin: 0;
+    padding-left: 120px;
+}
+
+.inline-block a {
+    display: flex;
+    text-decoration: none;
+    color: #262626;
+    font-family: 'arkhipregular' sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 15.25px;
+    letter-spacing: -0.05px;
+    margin: 0;
+    transition-duration: 0.7s;
+}
+
+.topLink:hover {
+    color: #A8AD00;
+    transition-duration: 0.3s; 
+    }
+
+.logo {
+    padding: 30px 50px;
+    width: 70%;
+    margin: 0;
+}
+
+.logo img {
+    max-width: 12.17%; 
+    height:auto;
+    margin: 0;
+}
+
+.inline-block ul {
+    display: inline-block;
+    font-family: 'arkhipregular';
+    font-weight: lighter;
+    letter-spacing: 0.1px;
+    font-size: 13px;  
+    margin: 0;   
+}
+
+.topLink {
+    padding: 2.5px;
+    margin: 0;
+}
+
+.stroke {
+    margin-top: 2.2px;
+    font-family: 'arkhipregular';
+    font-weight: lighter;
+}
+
+/* Hero */
+
+.hero {
+    background-image: url("../images/bba/hero.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-position-y: 107px;
+    background-color: white;
+    height: 1080px;
+    z-index: -500;
+    margin: 0;
+}
+
+.spacer {
+    display: inline-block;
+    height: 50px;
+}
+
+/* Page Title */
+
+.pageTitle h1 {
+    font-family: 'arkhipregular', sans-serif;
+    font-weight: lighter;
+    font-size: 85px;  
+    color: #4E313F;
+    text-align: center;
+    letter-spacing: -5px;
+    margin-top: -35px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+.pageTitle p {
+    font-family: 'axiformabook', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1px;
+    color: #6b6b66;
+    font-size: 14.75px;
+    text-align: center;
+}
+
+/* Video Preview */
+
+.videoPreview {
+    width: 90%;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+/* Project Details */
+
+.projectOverview {
+    margin-top: 50px;
+    border: none;
+  }
+
+.research {
+    margin-top: 35px;
+    border: none;
+  }
+
+h2 {
+    font-family: 'arkhipregular', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;  
+    color: #4E313F;
+    letter-spacing: -1px;
+    margin-top: -25px;
+    margin-left: -3px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+}  
+
+.centerHeader {
+    font-family: 'arkhipregular', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;  
+    color: #4E313F;
+    letter-spacing: -1px;
+    margin-top: -50px;
+    margin-left: -3px;
+    margin-bottom: 35px;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: center;
+}  
+
+.card {
+    margin-left: 320px;
+    border: none;
+}
+
+.card-title {
+    font-family: 'axiformabold', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color:  #205D76;
+}
+
+.card-text {
+    font-family: 'axiformabook', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1px;
+    color: #6b6b66;
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+.cardContainer {
+    margin-top: 20px;
+    padding-right: 0px;
+  }
+
+.margins {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Ballot Bites */
+
+.bbCard {
+    background-color: rgba(156, 199, 177, 0.1);
+    height: 600px;
+    margin-top: 50px;
+    margin-left: -15px;
+    padding-bottom: 50px;
+    padding-left: 0;
+}
+
+.bbcard-img-top {
+    width: 35%;
+    margin-top: -100px;
+}
+
+.bb-card-title {
+    font-family: 'axiformabold', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    color: #9CC7B1;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+.bbBtn {
+    background-color: #9cc7b1;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'axiformabook', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    padding: 10px;
+    width: 165px;
+    transition-duration: 0.7s;
+    grid-area: 'description';
+}
+
+.bbBtn:hover {
+    background-color: #85AD99;
+    cursor: pointer; 
+    transition-duration: 0.7s;
+}
+
+/* Bert's Big Adventure */
+
+.bbeCard {
+    background-color: rgba(32, 93, 118, 0.1);
+    height: 600px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-right: -15px;
+}
+
+.bbecard-img-top {
+    width: 80%;
+    margin-top: -95px;
+}
+
+.bbe-card-title {
+    font-family: 'axiformabold', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    color: #205D76;
+    text-align: center;
+    margin-top: 63px;
+    margin-bottom: 15px;
+}
+
+.bbeBtn {
+    background-color: #205D76;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'axiformabook', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    padding: 10px;
+    width: 165px;
+    transition-duration: 0.7s;
+    grid-area: 'description';
+}
+
+.bbeBtn:hover {
+    background-color: #154253;
+    cursor: pointer; 
+    transition-duration: 0.7s;
+}
+
+/* On The Road Again */
+
+.otraCard {
+    background-color: rgba(246, 106, 29, 0.1);
+    height: 600px;
+    margin-top: 50px;
+    margin-right: -15px;
+    padding-bottom: 50px;
+    padding-left: 0;
+}
+
+.otracard-img-top {
+    width: 35%;
+    margin-top: -100px;
+}
+
+.otra-card-title {
+    font-family: 'axiformabold', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    color: #F36A1D;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+.otraBtn {
+    background-color: #F36A1D;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'axiformabook', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    padding: 10px;
+    width: 165px;
+    transition-duration: 0.7s;
+    grid-area: 'description';
+}
+
+.otraBtn:hover {
+    background-color: #D55C19;
+    cursor: pointer; 
+    transition-duration: 0.7s;
+}
+
+/* Images */
+
+.img-fluid {
+    width: 80%;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+
+}
+
+/* Carousel */
+
+.d-block {
+    width: 70%;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    margin-top: 35px;
+
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #6B6B66;
+}
+
+.carousel-indicators .active {
+    background-color: #9cc7b1;
+}
+
+/* End Carousel */
+
+.caption{
+    font-family: 'axiformalight_italic', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1px;
+    color: #6b6b66;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-left: 175px;
+    margin-bottom: 50px;
+}
+
+.caption2{
+    font-family: 'axiformalight_italic', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.1px;
+    color: #6b6b66;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-left: 175px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+
+.workLink {
+    color: #205D76;
+    text-decoration: underline;
+    transition-duration: 0.2s;
+}
+
+.workLink:hover {
+    color: #262626;
+    cursor: pointer; 
+    transition-duration: 0.3s;
+}
+
+/* Footer */
+
+footer {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing:content-box;
+    background-color: #4E313F; 
+    height: 350px;
+    background-size: cover;
+    width: 100%;
+    position: static;
+    margin: 0;
+}
+
+.footerLogo {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing:content-box;
+    padding-left: 55px;
+    padding-top: 95px;
+    padding-right: 0;
+    float: left;
+}
+
+.footerLogo img {
+    height: 140px;
+}
+
+.connect {
+    box-sizing: content-box;
+    display: inline-block;
+    font-family: 'axiformamedium';
+    text-align: center;
+    color: #dddddd;
+    vertical-align: middle;
+    padding-top: 111px;
+    padding-left: 1055px;
+    padding-right: 25px;  
+    float: left;  
+  }
+
+  .contact img {
+    box-sizing: content-box;
+    height: 25px;
+    padding-top: 125px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+}
+
+  .copyright  {
+    box-sizing:content-box;
+    color: #DDDDDD;
+    font-family: 'axiformabook';
+    font-size: 11px;
+    padding-left: 1530px;
+    margin-top: 10px;
+    width: 310px;
+    text-align: right;
+}
+
+.footerEmail img {
+    opacity: 0.7;
+}
+
+.footerEmail img:hover {
+    opacity: 1;
+}
+
+ .footerLinked img {
+    opacity: 0.7;
+}
+
+.footerLinked img:hover {
+    opacity: 1;
+}
+
+ .footerResume img {
+    opacity: 0.7;
+}
+
+.footerResume img:hover {
+    opacity: 1;
+}
+
+/* Media Queries */
+
+/* 1440 */
+
+@media only screen and (max-width: 1440px) {
+
+ /* Header */
+    
+    .inline-block {
+        padding-left: 0px;
+    }
+    
+    .logo {
+        padding: 30px 50px;
+    }
+
+/* Hero */    
+    
+    .hero {
+        background-position-y: 70px;
+        height: 770px;
+    }
+
+/* Page Title */
+
+    .pageTitle h1 {
+        font-size: 75px;  
+    }
+
+/* Project Details */
+
+    .projectOverview {
+        margin-top: 35px;
+        border: none;
+    }
+
+
+    h2 {
+        padding-top: 0px;
+    }   
+
+    .centerHeader {
+        margin-left: 75px;
+    }     
+
+    .card {
+        margin-left: 200px;
+        border: none;
+    }
+
+    .card-text {
+        font-size: 15px;
+        margin-top: -5px;
+    }
+
+
+/* Ballot Bites */
+
+    .bbCard {
+        height: 475px;
+    }
+
+    .bbcard-img-top {
+        width: 35%;
+    }
+
+    .bb-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+
+/* Bert's Big Adventure */
+
+    .bbeCard {
+        height: 475px;
+    }
+
+    .bbe-card-title {
+        font-size: 23px;
+        margin-top: 50px;
+    }
+
+/* On The Road Again */
+
+.otraCard {
+    height: 475px;
+}
+
+.otracard-img-top {
+    width: 35%;
+}
+
+.otra-card-title {
+    font-size: 23px;
+    margin-top: -15px;
+}    
+
+/* Images */
+
+    .img-fluid {
+        width: 73%;
+    }
+
+/* Carousel */
+
+    .d-block {
+        width: 73%;
+    }
+
+    .caption{
+        margin-left: 175px;
+    }
+
+    .caption2{
+        margin-left: 175px;
+    }
+    
+/* Footer */
+    
+    .connect {
+        padding-left: 600px;
+    }
+    
+     .copyright  {
+        padding-left: 1080px;
+        width: 310px;
+    }
+
+
+
+/* 1024 */
+
+@media only screen and (max-width: 1024px) {
+
+/* Header */
+       
+    .inline-block {
+        padding-left: 375px;
+    }
+
+    .inline-block a {
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        padding: 30px 60px;
+        padding-bottom: 10px;
+    }
+    
+    .logo img {
+        max-width: 30%; 
+        margin-left: 375px;
+    }
+   
+   /* Hero */    
+       
+    .hero {
+       background-position-y: 215px;
+       height: 768px;
+    }
+   
+   /* Page Title */
+   
+    .pageTitle h1 {
+        font-size: 75px;  
+    }
+   
+   /* Project Details */
+   
+    .projectOverview {
+        margin-top: 15px;
+       border: none;
+   }
+
+   .centerHeader {
+        font-size: 40px;  
+    }  
+   
+   
+    h2 {
+        padding-top: 0px;
+    }   
+    
+    
+    .centerHeader {
+        margin-left: 35px;
+        margin-top: -15px;
+    }   
+   
+    .card {
+        margin-left: 175px;
+       border: none;
+   }
+   
+    .card-text {
+       font-size: 15px;
+       margin-top: -5px;
+   }
+   
+   
+/* Ballot Bites */
+   
+    .bbCard {
+       height: 350px;
+   }
+   
+   .bbcard-img-top {
+       width: 35%;
+   }
+   
+    .bb-card-title {
+        font-size: 23px;
+       margin-top: -15px;
+   }
+   
+   /* Bert's Big Adventure */
+   
+    .bbeCard {
+        height: 350px;
+    }
+   
+    .bbe-card-title {
+        font-size: 23px;
+       margin-top: 30px;
+   }
+
+/* On The Road Again */
+   
+.otraCard {
+    height: 350px;
+}
+
+.otracard-img-top {
+    width: 35%;
+}
+
+.otra-card-title {
+    font-size: 23px;
+    margin-top: -15px;
+}
+   
+/* Images */
+   
+    .img-fluid {
+        width: 85%;
+    }
+   
+/* Carousel */
+   
+    .d-block {
+        width: 85%;
+    }
+   
+    .caption{
+        margin-left: 55px;
+        margin-bottom: -100px;
+    }
+
+       
+/* Footer */
+    
+.footerLogo {
+    padding-left: 20px;
+    padding-top: 50px;
+    float: left;
+}
+
+.footerLogo img {
+    height: 150px;
+    padding-left: 40px;
+}
+
+.connect {
+    padding-top: 80px;
+    padding-left: 130px;
+    padding-right: 150px;
+    margin-right: -120px;
+}
+
+  .contact img {
+    padding-top: 95px;
+}
+
+  .copyright  {
+    padding-left: 340px;
+    padding-top: 75px;
+}
+
+
+/* 768 */
+
+@media only screen and (max-width: 768px) {
+
+/* Header */
+           
+    .inline-block {
+        padding-left: 243px;
+    }
+    
+    .inline-block a {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    
+    .logo {
+        padding: 30px 60px;
+        padding-bottom: 10px;
+    }
+    
+    .logo img {
+        margin-left: 240px;
+    }
+       
+/* Hero */    
+           
+    .hero {
+        background-position-y: 190px;
+        height: 525px;
+    }
+       
+/* Page Title */
+       
+    .pageTitle h1 {
+        font-size: 60px;  
+    }
+       
+/* Project Details */
+       
+    .projectOverview {
+        margin-top: 15px;
+        border: none;
+    }
+    
+    .centerHeader {
+        font-size: 40px;  
+    }  
+
+    h2 {
+        padding-top: 0px;
+    }  
+    
+    .centerHeader {
+        margin-left: 100px;
+        margin-top: -15px;
+    }     
+       
+    .card {
+        margin-left: 30px;
+       border: none;
+    }
+       
+    .card-text {
+       font-size: 15px;
+       margin-top: -5px;
+    }
+       
+       
+/* Ballot Bites */
+       
+    .bbCard {
+       height: 275px;
+       margin-right: -15px;
+    }
+       
+    .bbcard-img-top {
+       width: 35%;
+    }
+       
+    .bb-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+       
+/* Bert's Big Adventure */
+       
+    .bbeCard {
+        height: 275px;
+        margin-left: 0px;
+    }
+       
+    .bbe-card-title {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+/* On The Road Again */
+       
+.otraCard {
+    height: 275px;
+    margin-right: -15px;
+    margin-left: 15px;
+ }
+    
+ .otracard-img-top {
+    width: 35%;
+ }
+    
+ .otra-card-title {
+     font-size: 23px;
+     margin-top: -15px;
+ }    
+       
+/* Images */
+       
+    .img-fluid {
+        width: 80%;
+    }
+       
+/* Carousel */
+       
+    .d-block {
+        width: 80%;
+    }
+       
+    .caption{
+        margin-left: 55px;
+        margin-bottom: -100px;
+    }
+    
+           
+/* Footer */
+        
+    .footerLogo {
+        padding-left: 20px;
+        padding-top: 50px;
+        float: left;
+    }
+    
+    .footerLogo img {
+        height: 150px;
+        padding-left: 40px;
+    }
+    
+    .connect {
+        padding-top: 80px;
+        padding-left: 130px;
+        padding-right: 150px;
+        margin-right: -120px;
+    }
+    
+      .contact img {
+        padding-top: 95px;
+    }
+    
+      .copyright  {
+        padding-left: 340px;
+        padding-top: 75px;
+    }
+
+
+/* 600 */
+
+@media only screen and (max-width: 600px) {
+
+/* Header */    
+
+    .inline-block {
+        padding-left: 155px;
+    }
+    
+    .inline-block a {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    
+    .logo {
+        padding: 30px 60px;
+        padding-bottom: 10px;
+        
+    }
+    
+    .logo img {
+        margin-left: 170px;
+    }
+
+/* Page Title */
+       
+    .pageTitle h1 {
+        font-size: 60px;  
+    }
+    .pageTitle p {
+        font-size: 11.75px;
+    }
+
+/* Project Details */
+       
+    .projectOverview {
+        margin-top: 15px;
+        border: none;
+    }
+
+    .centerHeader {
+        font-size: 40px;  
+        margin-bottom: -25px;
+    }  
+
+    h2 {
+        padding-top: 0px;
+    }   
+
+    .centerHeader {
+        margin-left: 0px;
+        margin-top: -15px;
+    } 
+    
+    .card {
+        margin-left: 0px;
+        border: none;
+    }
+    
+    .card-text {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+   
+   
+/* Ballot Bites */
+   
+    .bbCard {
+    height: 400px;
+    margin-right: -15px;
+    }
+    
+    .bbcard-img-top {
+    width: 30%;
+    margin-top: -50px;
+    }
+    
+    .bb-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+   
+/* Bert's Big Adventure */
+   
+    .bbeCard {
+        height: 375px;
+        margin-left: -15px;
+    }
+    
+    .bbe-card-title {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+/* On The Road Again */
+   
+    .otraCard {
+        height: 375px;
+        margin-right: -15px;
+        margin-left: -15px;
+        margin-bottom: 50px;
+    }
+    
+    .otracard-img-top {
+        width: 30%;
+        margin-top: -50px;
+    }
+    
+    .otra-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+
+/* Images */
+   
+    .img-fluid {
+        width: 90%;
+    }
+    
+/* Carousel */
+   
+    .d-block {
+        width: 90%;
+    }
+   
+    .caption{
+        margin-left: 10px;
+        margin-bottom: -100px;
+        margin-top: -10px;
+        font-size: 9px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+        filter: invert(0%);
+    }
+
+ /* Footer */
+    
+    footer {
+        background-color: #4E313F;
+        height: 350px;
+        background-size: cover;
+        width: 100%;
+        position: static;
+    }
+
+    .footerLogo {
+        padding-left: 107px;
+        padding-top: 35px;
+        padding-right: 0;
+        float: none;
+    }
+
+    .footerLogo img {
+        height: 100px;
+    }
+
+    .connect {
+        padding-top: 10px;
+        margin-left: 85px;
+        padding-left: 50px;
+    }
+
+    .contact img {
+        padding-top: 25px;
+    }
+
+    .copyright  {
+        padding-left: 120px;
+        padding-top: 35px;
+    }
+
+
+
+/* 414 */
+
+@media only screen and (max-width: 414px) {
+
+/* Header */    
+    
+    .inline-block {
+        padding-left: 115px;
+    }
+
+    .inline-block a {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+
+    .inline-block ul {
+        margin-left: -25px;
+    }
+
+    .logo {
+        padding: 30px 60px;
+        padding-bottom: 10px;
+    }
+
+    .logo img {
+        margin-left: 100px;
+    }
+
+/* Hero */    
+           
+    .hero {
+        background-position-y: 160px;
+        height: 395px;
+    }
+    
+/* Page Title */
+           
+    .pageTitle h1 {
+        font-size: 60px;  
+    }
+    .pageTitle p {
+        font-size: 11.75px;
+    }
+    
+/* Project Details */
+           
+    .projectOverview {
+        margin-top: 15px;
+        border: none;
+    }
+    
+    .centerHeader {
+        font-size: 25px;  
+        margin-bottom: -25px;
+    }  
+    
+    h2 {
+        padding-top: 0px;
+        font-size: 28px;
+    }   
+       
+    .card {
+        margin-left: -10px;
+        border: none;
+    }
+       
+    .card-text {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+    
+    .card-title {
+        font-size: 15px;
+    }
+       
+/* Ballot Bites */
+       
+    .bbCard {
+       height: 400px;
+       margin-right: -15px;
+    }
+       
+    .bbcard-img-top {
+       width: 30%;
+       margin-top: -50px;
+    }
+       
+    .bb-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }
+       
+/* Bert's Big Adventure */
+       
+    .bbeCard {
+        height: 300px;
+        margin-left: -15px;
+    }
+       
+    .bbe-card-title {
+        font-size: 23px;
+        margin-top: 30px;
+    }
+
+/* Ballot Bites */
+       
+    .otraCard {
+        height: 300px;
+        margin-right: -15px;
+        margin-bottom: 50px;
+    }
+        
+    .otracard-img-top {
+        width: 30%;
+        margin-top: -50px;
+    }
+        
+    .otra-card-title {
+        font-size: 23px;
+        margin-top: -15px;
+    }    
+    
+/* Images */
+       
+    .img-fluid {
+        width: 90%;
+    }
+       
+/* Carousel */
+       
+    .d-block {
+        width: 90%;
+    }
+       
+    .caption{
+        margin-left: 5px;
+        margin-bottom: -100px;
+        margin-top: -10px;
+        font-size: 9px;
+    }
+    
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+        filter: invert(0%);
+    }
+    
+/* Footer */
+    
+    footer {
+        background-color: #4E313F;
+        height: 350px;
+        background-size: cover;
+        width: 100%;
+        position: static;
+    }
+
+    .footerLogo {
+        padding-left: 20px;
+        padding-top: 35px;
+
+    }
+
+    .footerLogo img {
+        height: 100px;
+    }
+
+    .connect {
+        padding-top: 15px;
+        margin-left: 0px;
+        padding-left: 45px;
+    }
+
+    .contact img {
+        padding-top: 28px;
+    }
+
+    .copyright  {
+        padding-left: 28px;
+        padding-top: 60px;
+    }
+}
