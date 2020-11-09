@@ -84,10 +84,6 @@ header {
     transition-duration: 0.3s; 
     }
 
-a:focus {
-    outline: 2px solid #a8ad00;
-}
-
 .logo {
     padding: 30px 50px;
     width: 70%;
