@@ -128,8 +128,8 @@ header {
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
-    background-position-y: 10px;
-    height: 765px;
+    background-position-y: 65px;
+    height: 1080px;
     z-index: -500;
 }
 
@@ -140,14 +140,19 @@ header {
     max-width: 100%;
     height: auto;
     margin: 0;
-
 } 
+
+.spacer {
+    display: inline-block;
+    height: 100px;
+}
+
 
 /* Creative Olives */
 
-.coCard {
+.ltCard {
     background-color: rgba(102,98,1, 0.05);
-    height: 450px;
+    height: 600px;
     margin-top: -20px;
     margin-left: -15px;
     padding-bottom: 50px;
@@ -155,7 +160,7 @@ header {
     
 }
 
-.cocard-img-top {
+.ltcard-img-top {
     width: 60%;
     margin-top: -35px;
     background-color: white;
@@ -163,18 +168,19 @@ header {
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
 }
 
-.co-card-title {
+.lt-card-title {
     font-family: 'axiformabold', sans-serif;
     font-weight: lighter;
     font-size: 18px;
+    text-align: left;
     letter-spacing: 0.5px;
     color: #666301;
     margin-top: -10px;
     margin-bottom: 15px;
-    margin-left: -270px;
+    margin-left: 175px;
 }
 
-.co-card-text {
+.lt-card-text {
     font-family: 'axiformalight_italic', sans-serif;
     font-weight: lighter;
     text-align: left;
@@ -182,14 +188,14 @@ header {
     color: #6b6b66;
     font-size: 10px;
     margin-top: -10px;
-    margin-left: 130px;
+    margin-left: 175px;
 }
 
 /* Paw Prince */
 
-.ppCard {
+.rtCard {
     background-color: rgba(102,98,1, 0.05);
-    height: 450px;
+    height: 600px;
     margin-top: -20px;
     margin-left: 0px;
     padding-bottom: 50px;
@@ -197,7 +203,7 @@ header {
     
 }
 
-.pp-img-top {
+.rt-img-top {
     width: 60%;
     margin-top: -35px;
     background-color: white;
@@ -205,18 +211,19 @@ header {
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
 }
 
-.pp-card-title {
+.rt-card-title {
     font-family: 'axiformabold', sans-serif;
     font-weight: lighter;
     font-size: 18px;
     letter-spacing: 0.5px;
+    text-align: left;
     color: #666301;
     margin-top: -30px;
     margin-bottom: 15px;
-    margin-left: -313px;
+    margin-left: 150px;
 }
 
-.pp-card-text {
+.rt-card-text {
     font-family: 'axiformalight_italic', sans-serif;
     font-weight: lighter;
     text-align: left;
@@ -224,93 +231,8 @@ header {
     color: #6b6b66;
     font-size: 10px;
     margin-top: -10px;
-    margin-left: 103px;
+    margin-left: 150px;
 }
-
-/* Twig + Cotton */
-
-.tcCard {
-    background-color: rgba(102,98,1, 0.05);
-    height: 450px;
-    margin-top: -20px;
-    margin-left: -15px;
-    padding-bottom: 50px;
-    padding-left: 0;
-    
-}
-
-.tccard-img-top {
-    width: 60%;
-    margin-top: -35px;
-    background-color: white;
-    padding: 25px;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
-}
-
-.tc-card-title {
-    font-family: 'axiformabold', sans-serif;
-    font-weight: lighter;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    color: #666301;
-    margin-top: -10px;
-    margin-bottom: 15px;
-    margin-left: -305px;
-}
-
-.tc-card-text {
-    font-family: 'axiformalight_italic', sans-serif;
-    font-weight: lighter;
-    text-align: left;
-    letter-spacing: 0.1px;
-    color: #6b6b66;
-    font-size: 10px;
-    margin-top: -10px;
-    margin-left: 128px;
-}
-
-/* Ballot Bites */
-
-.ballotCard {
-    background-color: rgba(102,98,1, 0.05);
-    height: 450px;
-    margin-top: -20px;
-    margin-left: 0px;
-    padding-bottom: 50px;
-    padding-left: 0;
-    
-}
-
-.ballotcard-img-top {
-    width: 60%;
-    margin-top: -35px;
-    background-color: white;
-    padding: 25px;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.16);
-}
-
-.ballot-card-title {
-    font-family: 'axiformabold', sans-serif;
-    font-weight: lighter;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    color: #666301;
-    margin-top: -30px;
-    margin-bottom: 15px;
-    margin-left: -323px;
-}
-
-.ballot-card-text {
-    font-family: 'axiformalight_italic', sans-serif;
-    font-weight: lighter;
-    text-align: left;
-    letter-spacing: 0.1px;
-    color: #6b6b66;
-    font-size: 10px;
-    margin-top: -10px;
-    margin-left: 105px;
-}
-
 
 /* Footer */
 
