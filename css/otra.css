@@ -1023,7 +1023,7 @@ footer {
 
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
-        filter: invert(0%);
+        filter: invert(25%);
     }
 
  /* Footer */
@@ -1190,7 +1190,7 @@ footer {
     
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
-        filter: invert(0%);
+        filter: invert(25%);
     }
     
 /* Footer */

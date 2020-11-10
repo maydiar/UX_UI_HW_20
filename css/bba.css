@@ -426,7 +426,7 @@ h2 {
 }
 
 .carousel-indicators .active {
-    background-color: #9cc7b1;
+    background-color: #205D76;
 }
 
 /* End Carousel */
@@ -1140,7 +1140,7 @@ footer {
 
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
-        filter: invert(0%);
+        filter: invert(25%);
     }
 
  /* Footer */
@@ -1324,7 +1324,7 @@ footer {
     
     .carousel-control-next,
     .carousel-control-prev /*, .carousel-indicators */ {
-        filter: invert(0%);
+        filter: invert(25%);
     }
     
 /* Footer */
